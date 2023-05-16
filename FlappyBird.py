@@ -22,3 +22,28 @@ IMAGES_PASSARO = [
 
 pygame.font.init()
 FONTE_PONTOS = pygame.font.SysFont("arial", 50)
+
+
+class Passaro:
+    IMGS = IMAGES_PASSARO
+    ROTACAO_MAXIMA = 25
+    VELOCIDADE_ROTACAO = 20
+    TEMPO_ROTACAO = 5
+
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.angulo = 0
+        self.velocidade = 0
+        self.altura = self.y
+        self.tempo = 0
+        self.contagem_imagem = 0
+        self.imagem = IMGS[0]
+
+
+class Cano:
+    pass
+
+
+class Chao:
+    pass
